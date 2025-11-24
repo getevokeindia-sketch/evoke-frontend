@@ -1,0 +1,8 @@
+<!-- Save this as logo.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="31" fill="#ffffff" stroke="#111827" stroke-width="1.5"/>
+  <path d="M18 28c0-7 6-12 13-12s13 5 13 12v6l2 3H16l2-3v-6z" fill="#111827"/>
+  <rect x="27" y="44" width="10" height="3" rx="1.5" fill="#111827"/>
+  <circle cx="46" cy="18" r="4.5" fill="#ef4444"/>
+  <circle cx="46" cy="18" r="2.2" fill="#fff"/>
+</svg>
