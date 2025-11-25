@@ -1,98 +1,96 @@
-<!-- Save as index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Evoke Reminders — Smart WhatsApp reminders</title>
-  <meta name="description" content="Evoke Reminders — smart WhatsApp-based reminders for individuals and businesses." />
-  <link rel="icon" href="/logo.svg" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evoke Reminders</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a class="brand" href="/">
-        <img src="logo.svg" alt="Evoke logo" />
-        <h1>Evoke Reminders</h1>
-      </a>
-      <nav class="navlinks">
-        <a href="/">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms</a>
-        <a class="cta" href="contact.html">Get Started</a>
-      </nav>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="https://cdn-icons-png.flaticon.com/512/1827/1827370.png" class="logo">
+      <span class="brand">Evoke Reminders</span>
     </div>
+    <nav class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="Privacy.html">Privacy Policy</a>
+      <a href="Terms.html">Terms</a>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="hero-card">
-        <h2>Welcome to Evoke Reminders</h2>
-        <p>Smart WhatsApp-based reminders that help individuals and businesses stay on top of important dates, tasks, and follow-ups — without the noise.</p>
-        <div class="actions">
-          <a class="cta" href="contact.html">Request Demo</a>
-          <a class="btn-outline" href="#features">How it works</a>
-        </div>
-
-        <div id="features" class="features" style="margin-top:28px">
-          <div class="feature">
-            <h4>WhatsApp Delivery</h4>
-            <p>Automated reminders directly on WhatsApp — templates, scheduling and audit trails.</p>
-          </div>
-          <div class="feature">
-            <h4>Easy Integration</h4>
-            <p>API and no-code connectors to integrate with your CRM, calendar or spreadsheets.</p>
-          </div>
-          <div class="feature">
-            <h4>Secure & Compliant</h4>
-            <p>Business-grade security, privacy policy, and verification ready for Meta WhatsApp APIs.</p>
-          </div>
-          <div class="feature">
-            <h4>Quick Setup</h4>
-            <p>Onboard in minutes with a test number and sample templates.</p>
-          </div>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Stay on Top of Your Important Tasks</h1>
+      <p>Smart WhatsApp-based reminders for birthdays, renewals, EMI dates, client follow-ups and more —
+        without forgetting.</p>
+      <div class="hero-buttons">
+        <a class="btn-primary" href="https://wa.me/9150230234?text=Hi%2C%20I%20want%20a%20demo">Request Demo</a>
+        <a class="btn-secondary" href="#how">How it works</a>
       </div>
-    </section>
+    </div>
 
-    <section style="margin-top:28px" class="grid-2">
-      <div>
-        <div class="card">
-          <h3>Why Evoke?</h3>
-          <p class="small">We reduce missed dates and manual follow ups by automating reminders that people actually read.</p>
-          <ul style="margin-top:12px">
-            <li>Recurring & one-time reminders</li>
-            <li>Template messages & personalization</li>
-            <li>Delivery reporting</li>
-            <li>Integrates with calendars and CRMs</li>
-          </ul>
-        </div>
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png">
+    </div>
+  </section>
 
-        <div style="margin-top:18px" class="card">
-          <h3>Get started</h3>
-          <p class="small">Contact us for verification help, business onboarding, and pricing.</p>
-          <p style="margin-top:10px"><strong>Email:</strong> <a href="mailto:getevokeindia@gmail.com">getevokeindia@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+919150230234">+91 91502 30234</a></p>
-        </div>
+  <!-- Features -->
+  <section class="features">
+    <div class="feature-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/907/907717.png">
+      <h3>WhatsApp Delivery</h3>
+      <p>Automated reminders delivered instantly and reliably through WhatsApp.</p>
+    </div>
+    <div class="feature-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png">
+      <h3>Easy Integration</h3>
+      <p>Connect with Google Calendar, CRM or spreadsheets — no coding required.</p>
+    </div>
+    <div class="feature-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+      <h3>Secure & Compliant</h3>
+      <p>Built with privacy and Meta API verification compliance at the core.</p>
+    </div>
+    <div class="feature-item">
+      <img src="https://cdn-icons-png.flaticon.com/512/709/709592.png">
+      <h3>Quick Setup</h3>
+      <p>Get started within minutes using a test number and sample templates.</p>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how" id="how">
+    <h2>How Evoke Works</h2>
+    <div class="how-grid">
+      <div class="step">
+        <span class="step-number">1</span>
+        <h4>Add your dates</h4>
+        <p>Birthdays, anniversaries, renewal dates, payment follow-ups — everything in one place.</p>
       </div>
+      <div class="step">
+        <span class="step-number">2</span>
+        <h4>We schedule reminders</h4>
+        <p>Evoke automatically sets up reminders days, weeks or months in advance.</p>
+      </div>
+      <div class="step">
+        <span class="step-number">3</span>
+        <h4>Get alerts on WhatsApp</h4>
+        <p>You receive timely reminders directly on WhatsApp — simple & effective.</p>
+      </div>
+    </div>
+  </section>
 
-      <aside>
-        <div class="card">
-          <h3>Demo & Test</h3>
-          <p class="small">We provide a 90-day test number for API integration testing.</p>
-          <a class="cta" href="contact.html">Book Demo</a>
-        </div>
-      </aside>
-    </section>
-
-    <footer class="site-footer">
-      <p>© 2025 Evoke Reminders • Chennai, India</p>
-      <p><a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms</a></p>
-    </footer>
-  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Evoke Reminders • Chennai, India</p>
+  </footer>
 
 </body>
 </html>
