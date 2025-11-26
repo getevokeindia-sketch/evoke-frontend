@@ -28,6 +28,20 @@ body{
   margin:0 auto;
   padding:28px;
 }
+.btn-launch {
+    padding: 8px 16px;
+    background: #2b7fff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.btn-launch:hover {
+    background: #165fcc;
+}
+}
 /* Header */
 .header{
   background:transparent;
