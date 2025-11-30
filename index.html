@@ -1,106 +1,348 @@
-<!-- Save as index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>EVOKE — Smart WhatsApp reminders</title>
-  <meta name="description" content="Evoke Reminders — smart WhatsApp-based reminders for individuals and businesses." />
-  <link rel="icon" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Evoke — Never forget again</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a class="brand" href="/">
-        <img src="logo.svg" alt="Evoke logo" />
-        <h1>EVOKE</h1>
-      </a>
-      <nav class="navlinks">
-        <a href="/">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms</a>
-        <a class="cta" href="contact.html">Get Started</a>
-        <a href="http://localhost:3000" class="btn-launch">Launch App</a>
+  <!-- Sticky frosted header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+
+      <div class="logo">
+        <div class="logo-badge">EV</div>
+        <div class="logo-text">
+          <div class="brand">EVOKE</div>
+          <div class="tag">Never forget again</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#how" class="nav-link">How it works</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
+
+      <div class="header-cta">
+        <a href="https://evoke-frontend-react.netlify.app/" class="btn btn-primary">Set Reminder</a>
+      </div>
+
     </div>
   </header>
 
-  <main class="container">
+  <main>
+
+    <!-- Hero -->
     <section class="hero">
-      <div class="hero-card">
-        <h2>Welcome to Evoke Reminders</h2>
-        <p>Smart WhatsApp-based reminders that help individuals and businesses stay on top of important dates, tasks, and follow-ups — without the noise.</p>
-        <div class="actions">
-          <a class="cta" href="contact.html">Request Demo</a>
-          <a class="btn-outline" href="#features">How it works</a>
-        </div>
+      <div class="container hero-grid">
 
-        <div id="features" class="features" style="margin-top:28px">
-          <div class="feature">
-            <h4>WhatsApp Delivery</h4>
-            <p>Automated reminders directly on WhatsApp — templates, scheduling and audit trails.</p>
-          </div>
-          <div class="feature">
-            <h4>Easy Integration</h4>
-            <p>API and no-code connectors to integrate with your CRM, calendar or spreadsheets.</p>
-          </div>
-          <div class="feature">
-            <h4>Secure & Compliant</h4>
-            <p>Business-grade security, privacy policy, and verification ready for Meta WhatsApp APIs.</p>
-          </div>
-          <div class="feature">
-            <h4>Quick Setup</h4>
-            <p>Onboard in minutes with a test number and sample templates.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="hero-left">
+          <h1 class="hero-title">Never miss an important date again</h1>
+          <p class="hero-sub">
+            Evoke sends WhatsApp reminders automatically — appointments, payments,
+            renewals and client follow-ups — with secure, compliant delivery.
+          </p>
 
-    <section style="margin-top:28px" class="grid-2">
-      <div>
-        <div class="card">
-          <h3>What is Evoke?</h3>
-          <p class="small">EVOKE is an automated WhatsApp-based reminder service that sends you timely alerts for all your important dates and commitments.</p>
-	  <p class="small">You’ll never miss things like:</p>
-          <ul style="margin-top:12px">
-            <li>Customer appointment reminders</li>
-            <li>Payment due reminders</li>
-            <li>Subscription / membership renewals</li>
-            <li>Classes / session reminders</li>
-	    <li>EMI / invoice reminders</li>	
-	    <li>Treatment / medicine reminders</li>
+          <div class="hero-actions">
+            <a href="https://evoke-frontend-react.netlify.app/" class="btn btn-primary">Set Reminder</a>
+          </div>
 
-	    <p class="**Just add your dates once — EVOKE reminds you automatically on WhatsApp.**</p>
+          <ul class="hero-bullets">
+            <li>Quick setup</li>
+            <li>Secure & compliant</li>
+            <li>Template-based delivery</li>
           </ul>
         </div>
 
+        <div class="hero-right">
+          <div class="wa-chat">
 
-        <aside>
-        <div class="card">
-          <h3>Get started</h3>
-          <p class="small">Contact us for verification help, business onboarding, and pricing.</p>
-          <p style="margin-top:10px"><strong>Email:</strong> <a href="mailto:getevokeindia@gmail.com">getevokeindia@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+919150230234">+91 91502 30234</a></p>
+            <div class="wa-header">
+              <img src="https://i.imgur.com/4ZQZ4ZC.png" class="wa-avatar" />
+              <div>
+                <div class="wa-name">Evoke Reminders</div>
+                <div class="wa-status">online</div>
+              </div>
+            </div>
+
+            <div class="wa-bubble">
+              <div class="wa-title">Appointment with Ravi</div>
+              <div class="wa-time">Tomorrow, 10:00 AM ✔✔</div>
+            </div>
+
+            <div class="wa-bubble">
+              <div class="wa-title">EMI Payment Due</div>
+              <div class="wa-time">14 Apr, 09:00 AM ✔✔</div>
+            </div>
+
+            <div class="wa-bubble">
+              <div class="wa-title">Subscription Renewal</div>
+              <div class="wa-time">20 Apr, 12:00 PM ✔✔</div>
+            </div>
+
+          </div>
         </div>
+
       </div>
-
-      <aside>
-        <div class="card">
-          <h3>Demo & Test</h3>
-          <p class="small">We provide a 90-day test number for API integration testing.</p>
-          <a class="cta" href="contact.html">Book Demo</a>
-        </div>
-      </aside>
     </section>
 
-    <footer class="site-footer">
-      <p>© 2025 Evoke • Chennai, India</p>
-      <p><a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms</a></p>
-    </footer>
+    <!-- ⭐ FEATURES (FULL + FIXED) -->
+    <section id="features" class="section">
+      <div class="container">
+
+        <h2 class="section-title">What Evoke Does</h2>
+        <p class="section-sub">
+          Smart WhatsApp reminders that run automatically — for individuals and businesses.
+        </p>
+
+        <div class="cards-grid">
+
+          <article class="glass-card">
+            <div class="card-icon">💬</div>
+            <h3>WhatsApp Delivery</h3>
+            <p>Template-based delivery through Meta-approved channels with status tracking.</p>
+          </article>
+
+          <article class="glass-card">
+            <div class="card-icon">🔗</div>
+            <h3>Easy Integration</h3>
+            <p>Connect spreadsheets, CRMs or use our APIs — bulk upload supported.</p>
+          </article>
+
+          <article class="glass-card">
+            <div class="card-icon">🔒</div>
+            <h3>Secure & Compliant</h3>
+            <p>Encrypted storage and access controls — WABA-compliant delivery.</p>
+          </article>
+
+          <!-- ⭐ FIXED CARD -->
+          <article class="glass-card">
+            <div class="card-icon">⏱️</div>
+            <h3>Exact-Time Scheduling</h3>
+            <p>Enterprise-grade scheduling that fires reminders at the exact minute you choose.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="section light-section">
+      <div class="container how-grid">
+
+        <div>
+          <h2 class="section-title">How Evoke Works</h2>
+
+          <ol class="how-list">
+            <li><strong>Enter details:</strong> Add name, phone, date & message.</li>
+            <li><strong>Secure storage:</strong> Your reminders are encrypted.</li>
+            <li><strong>Agenda schedules:</strong> Jobs are queued & monitored.</li>
+            <li><strong>AiSensy → Meta:</strong> WhatsApp template delivery.</li>
+            <li><strong>Status tracking:</strong> Sent / Failed / Queued logs.</li>
+          </ol>
+
+          <a class="link-ghost" href="#pricing">View pricing</a>
+        </div>
+
+        <aside class="glass-aside">
+          <h4>Reliable. Auditable. Automatic.</h4>
+          <p>
+            Every reminder is tracked, logged and delivered with precise accuracy and reporting.
+          </p>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section">
+      <div class="container">
+
+        <h2 class="section-title">Benefits</h2>
+
+        <div class="cards-grid">
+
+          <article class="glass-card small">
+            <div class="card-icon">⏳</div>
+            <h4>Save time</h4>
+            <p>Automate follow-ups so you spend time on growth, not reminders.</p>
+          </article>
+
+          <article class="glass-card small">
+            <div class="card-icon">📉</div>
+            <h4>Reduce no-shows</h4>
+            <p>Timely messages reduce missed appointments and repeat work.</p>
+          </article>
+
+          <article class="glass-card small">
+            <div class="card-icon">🔐</div>
+            <h4>Secure data</h4>
+            <p>Encrypted storage and limited access keep customer data safe.</p>
+          </article>
+
+          <article class="glass-card small">
+            <div class="card-icon">📊</div>
+            <h4>Actionable insights</h4>
+            <p>Delivery reports help you optimise templates and timings.</p>
+          </article>
+
+        </div>
+
+        <h3 class="section-subtitle">Who uses Evoke?</h3>
+        <p class="muted">Small businesses, clinics, tutors, coaches and freelancers.</p>
+
+        <div class="chips">
+          <span class="chip">Clinics</span>
+          <span class="chip">Tutors</span>
+          <span class="chip">Gyms</span>
+          <span class="chip">Loan Agents</span>
+          <span class="chip">Freelancers</span>
+          <span class="chip">SMBs</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section light-section">
+      <div class="container">
+
+        <h2 class="section-title">Pricing</h2>
+        <p class="section-sub">Simple, predictable pricing. Scale as you grow.</p>
+
+        <div class="pricing-grid">
+
+          <div class="glass-card price-card">
+            <div class="badge">Most popular</div>
+            <h3>Starter</h3>
+            <div class="price">₹299 <span class="per">/month</span></div>
+            <ul class="price-list">
+              <li>200 reminders / month</li>
+              <li>Bulk upload</li>
+              <li>Status tracking</li>
+            </ul>
+            <a href="/set-reminder" class="btn btn-primary">Get Started</a>
+          </div>
+
+          <div class="glass-card price-card">
+            <h3>Business</h3>
+            <div class="price">₹799 <span class="per">/month</span></div>
+            <ul class="price-list">
+              <li>1000 reminders / month</li>
+              <li>Priority support</li>
+              <li>Template library</li>
+            </ul>
+            <a href="#contact" class="link-ghost">Contact Sales</a>
+          </div>
+
+          <div class="glass-card price-card">
+            <h3>Enterprise</h3>
+            <div class="price">Custom</div>
+            <ul class="price-list">
+              <li>Dedicated onboarding</li>
+              <li>SLAs & integrations</li>
+              <li>Volume pricing</li>
+            </ul>
+            <a href="#contact" class="link-ghost">Request Demo</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+
+        <h2 class="section-title">FAQ</h2>
+
+        <div class="faq-grid">
+
+          <div class="glass-card faq-card">
+            <h4>Do my clients need an app?</h4>
+            <p>No — messages go directly to the clients' WhatsApp. No downloads required.</p>
+          </div>
+
+          <div class="glass-card faq-card">
+            <h4>Is my data secure?</h4>
+            <p>Yes — reminders and phone numbers are stored encrypted & WABA compliant.</p>
+          </div>
+
+          <div class="glass-card faq-card">
+            <h4>What if a message fails?</h4>
+            <p>Failures are logged and you can retry from your admin dashboard.</p>
+          </div>
+
+          <div class="glass-card faq-card">
+            <h4>Can I upgrade anytime?</h4>
+            <p>Yes — upgrade or downgrade instantly as your needs change.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section light-section">
+      <div class="container contact-grid">
+
+        <div>
+          <h2 class="section-title">Get started with Evoke</h2>
+          <p>Contact us for onboarding, pricing or verification help.</p>
+
+          <p><strong>Email:</strong> <a href="mailto:getevokeindia@gmail.com">getevokeindia@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+919150230234">+91 91502 30234</a></p>
+          <p><strong>Location:</strong> Chennai, India</p>
+
+          <div class="footer-actions">
+            <a href="https://evoke-frontend-react.netlify.app/" class="btn btn-primary">Set Reminder</a>
+            <a href="#pricing" class="link-ghost">Contact Sales</a>
+          </div>
+        </div>
+
+        <aside class="glass-aside">
+          <h4>We'll help you get started</h4>
+          <p>Reach out anytime — quick response guaranteed.</p>
+        </aside>
+
+      </div>
+    </section>
+
   </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo-badge small">EV</div>
+        <div class="copyright">©️ 2025 Evoke · Chennai, India</div>
+      </div>
+
+      <div class="footer-right">
+        <a class="small-link" href="/privacy">Privacy Policy</a>
+        <a class="small-link" href="/terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // sticky header scroll effect
+    (function () {
+      const header = document.getElementById('siteHeader');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 40) header.classList.add('scrolled');
+        else header.classList.remove('scrolled');
+      }, { passive: true });
+    })();
+  </script>
 
 </body>
 </html>
