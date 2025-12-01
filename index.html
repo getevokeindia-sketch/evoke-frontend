@@ -2,19 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Evoke — Never forget again</title>
+
+  <!-- ======= FAVICON (Updated) ======= -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Social Share Preview (WhatsApp / FB / LinkedIn) -->
+  <meta property="og:title" content="Evoke — Never forget again">
+  <meta property="og:description" content="Smart WhatsApp reminders for individuals and businesses.">
+  <meta property="og:image" content="evoke-logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Sticky frosted header -->
+
+  <!-- ======================== HEADER ======================== -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
 
+      <!-- Updated EVOKE Logo (Circle Image) -->
       <div class="logo">
-        <div class="logo-badge">EV</div>
+        <img src="evoke-logo.png" class="logo-img" alt="Evoke Logo">
         <div class="logo-text">
           <div class="brand">EVOKE</div>
           <div class="tag">Never forget again</div>
@@ -30,18 +44,25 @@
       </nav>
 
       <div class="header-cta">
-        <a href="https://evoke-frontend-react.netlify.app/" class="btn btn-primary">Set Reminder</a>
+   <a 
+  href="https://hopeful-frog-86.clerk.accounts.dev/sign-in?redirect_url=https://getevoke.in/app/dashboard"
+  class="btn btn-primary"
+>
+  Set Reminder
+</a>
       </div>
 
     </div>
   </header>
 
+  <!-- ======================== MAIN ======================== -->
   <main>
 
-    <!-- Hero -->
+    <!-- ================= HERO SECTION ================= -->
     <section class="hero">
       <div class="container hero-grid">
 
+        <!-- LEFT -->
         <div class="hero-left">
           <h1 class="hero-title">Never miss an important date again</h1>
           <p class="hero-sub">
@@ -50,7 +71,12 @@
           </p>
 
           <div class="hero-actions">
-            <a href="https://evoke-frontend-react.netlify.app/" class="btn btn-primary">Set Reminder</a>
+            <a 
+  href="https://hopeful-frog-86.clerk.accounts.dev/sign-in?redirect_url=https://getevoke.in/app/dashboard"
+  class="btn btn-primary"
+>
+  Set Reminder
+</a>
           </div>
 
           <ul class="hero-bullets">
@@ -60,19 +86,22 @@
           </ul>
         </div>
 
+        <!-- RIGHT - WhatsApp Mockup -->
         <div class="hero-right">
           <div class="wa-chat">
 
+            <!-- WhatsApp Header -->
             <div class="wa-header">
-              <img src="https://i.imgur.com/4ZQZ4ZC.png" class="wa-avatar" />
-              <div>
-                <div class="wa-name">Evoke Reminders</div>
+              <img src="evoke-logo.png" class="wa-avatar" alt="Evoke Avatar">
+              <div class="meta">
+                <div class="wa-name">Evoke</div>
                 <div class="wa-status">online</div>
               </div>
             </div>
 
+            <!-- Messages -->
             <div class="wa-bubble">
-              <div class="wa-title">Appointment with Ravi</div>
+              <div class="wa-title">Appointment with Doctor</div>
               <div class="wa-time">Tomorrow, 10:00 AM ✔✔</div>
             </div>
 
@@ -92,7 +121,7 @@
       </div>
     </section>
 
-    <!-- ⭐ FEATURES (FULL + FIXED) -->
+    <!-- ================= FEATURES ================= -->
     <section id="features" class="section">
       <div class="container">
 
@@ -106,26 +135,25 @@
           <article class="glass-card">
             <div class="card-icon">💬</div>
             <h3>WhatsApp Delivery</h3>
-            <p>Template-based delivery through Meta-approved channels with status tracking.</p>
+            <p>Meta-approved templates with exact-time scheduling.</p>
           </article>
 
           <article class="glass-card">
             <div class="card-icon">🔗</div>
             <h3>Easy Integration</h3>
-            <p>Connect spreadsheets, CRMs or use our APIs — bulk upload supported.</p>
+            <p>Connect CRMs, sheets or use APIs — bulk upload supported.</p>
           </article>
 
           <article class="glass-card">
             <div class="card-icon">🔒</div>
             <h3>Secure & Compliant</h3>
-            <p>Encrypted storage and access controls — WABA-compliant delivery.</p>
+            <p>Encrypted storage and access controls — always compliant.</p>
           </article>
 
-          <!-- ⭐ FIXED CARD -->
           <article class="glass-card">
             <div class="card-icon">⏱️</div>
             <h3>Exact-Time Scheduling</h3>
-            <p>Enterprise-grade scheduling that fires reminders at the exact minute you choose.</p>
+            <p>Every reminder fires at the exact minute you choose.</p>
           </article>
 
         </div>
@@ -133,7 +161,7 @@
       </div>
     </section>
 
-    <!-- How it works -->
+    <!-- ================= HOW IT WORKS ================= -->
     <section id="how" class="section light-section">
       <div class="container how-grid">
 
@@ -161,7 +189,7 @@
       </div>
     </section>
 
-    <!-- Benefits -->
+    <!-- ================= BENEFITS ================= -->
     <section class="section">
       <div class="container">
 
@@ -178,25 +206,25 @@
           <article class="glass-card small">
             <div class="card-icon">📉</div>
             <h4>Reduce no-shows</h4>
-            <p>Timely messages reduce missed appointments and repeat work.</p>
+            <p>Timely reminders reduce missed appointments & repeat work.</p>
           </article>
 
           <article class="glass-card small">
             <div class="card-icon">🔐</div>
             <h4>Secure data</h4>
-            <p>Encrypted storage and limited access keep customer data safe.</p>
+            <p>Encrypted data + limited access → safe and compliant.</p>
           </article>
 
           <article class="glass-card small">
             <div class="card-icon">📊</div>
-            <h4>Actionable insights</h4>
-            <p>Delivery reports help you optimise templates and timings.</p>
+            <h4>Insights</h4>
+            <p>Delivery logs help you improve template success rates.</p>
           </article>
 
         </div>
 
         <h3 class="section-subtitle">Who uses Evoke?</h3>
-        <p class="muted">Small businesses, clinics, tutors, coaches and freelancers.</p>
+        <p class="muted">Clinics, tutors, gyms, loan agents, freelancers and SMBs.</p>
 
         <div class="chips">
           <span class="chip">Clinics</span>
@@ -210,7 +238,7 @@
       </div>
     </section>
 
-    <!-- Pricing -->
+    <!-- ================= PRICING ================= -->
     <section id="pricing" class="section light-section">
       <div class="container">
 
@@ -228,7 +256,7 @@
               <li>Bulk upload</li>
               <li>Status tracking</li>
             </ul>
-            <a href="/set-reminder" class="btn btn-primary">Get Started</a>
+            <a href="https://evoke-frontend-react.netlify.app/" class="btn btn-primary">Get Started</a>
           </div>
 
           <div class="glass-card price-card">
@@ -258,7 +286,7 @@
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- ================= FAQ ================= -->
     <section id="faq" class="section">
       <div class="container">
 
@@ -268,22 +296,22 @@
 
           <div class="glass-card faq-card">
             <h4>Do my clients need an app?</h4>
-            <p>No — messages go directly to the clients' WhatsApp. No downloads required.</p>
+            <p>No — reminders go directly to WhatsApp. No downloads needed.</p>
           </div>
 
           <div class="glass-card faq-card">
             <h4>Is my data secure?</h4>
-            <p>Yes — reminders and phone numbers are stored encrypted & WABA compliant.</p>
+            <p>Yes — all reminders and contacts are encrypted & WABA compliant.</p>
           </div>
 
           <div class="glass-card faq-card">
             <h4>What if a message fails?</h4>
-            <p>Failures are logged and you can retry from your admin dashboard.</p>
+            <p>Failures are logged, and you can retry from your dashboard.</p>
           </div>
 
           <div class="glass-card faq-card">
             <h4>Can I upgrade anytime?</h4>
-            <p>Yes — upgrade or downgrade instantly as your needs change.</p>
+            <p>Yes — change plans instantly as your usage grows.</p>
           </div>
 
         </div>
@@ -291,7 +319,7 @@
       </div>
     </section>
 
-    <!-- Contact -->
+    <!-- ================= CONTACT ================= -->
     <section id="contact" class="section light-section">
       <div class="container contact-grid">
 
@@ -304,7 +332,12 @@
           <p><strong>Location:</strong> Chennai, India</p>
 
           <div class="footer-actions">
-            <a href="https://evoke-frontend-react.netlify.app/" class="btn btn-primary">Set Reminder</a>
+            <a 
+  href="https://hopeful-frog-86.clerk.accounts.dev/sign-in?redirect_url=https://getevoke.in/app/dashboard"
+  class="btn btn-primary"
+>
+  Set Reminder
+</a>
             <a href="#pricing" class="link-ghost">Contact Sales</a>
           </div>
         </div>
@@ -319,10 +352,11 @@
 
   </main>
 
+  <!-- ======================== FOOTER ======================== -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-left">
-        <div class="logo-badge small">EV</div>
+        <img src="evoke-logo.png" class="footer-logo-img" alt="Evoke Footer Logo">
         <div class="copyright">©️ 2025 Evoke · Chennai, India</div>
       </div>
 
@@ -333,13 +367,13 @@
     </div>
   </footer>
 
+  <!-- Sticky Header Scroll -->
   <script>
-    // sticky header scroll effect
     (function () {
-      const header = document.getElementById('siteHeader');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 40) header.classList.add('scrolled');
-        else header.classList.remove('scrolled');
+      const header = document.getElementById("siteHeader");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 40) header.classList.add("scrolled");
+        else header.classList.remove("scrolled");
       }, { passive: true });
     })();
   </script>
